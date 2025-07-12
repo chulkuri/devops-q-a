@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IncentSoft DevOps QA Chatbot</title>
+
+  <!-- Chatbot styles and script -->
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f5f9;
+    }
+
+    header {
+      background-color: #283593;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to IncentSoft DevOps Q&A</h1>
+  </header>
+
+  <main>
+    <p>Have questions about our company or want to apply?</p>
+    <p>Use the chat bubble in the bottom-right corner to get started!</p>
+  </main>
+
+  <!-- Chatbot component -->
+<df-messenger
+  project-id="videosemanticsearch"
+  agent-id="a8763727-d9b8-41f0-a5d1-84ef3a67d6e6"
+  language-code="en"
+  max-query-length="-1"
+  oauth-client-id="309836852150-39oqqujq9lm08au91b5ct1otve0c4vfv.apps.googleusercontent.com">
+    <df-messenger-chat-bubble
+      chat-title="DEV QA">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+
+</body>
+</html>
